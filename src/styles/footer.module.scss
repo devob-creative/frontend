@@ -1,0 +1,12 @@
+.wrapper {
+  position: relative;
+  background-color: var(--bg-secondary);
+  padding: 20px 0;
+  .brand {
+    color: var(--text-primary);
+    transition: 0.2s;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
