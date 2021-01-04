@@ -1,0 +1,17 @@
+.element {
+  &.font-primary {
+    font-family: var(--font-primary);
+  }
+  &.font-secondary {
+    font-family: var(--font-secondary);
+  }
+  &.text-uppercase {
+    text-transform: uppercase;
+  }
+  &.text-capitalize {
+    text-transform: capitalize;
+  }
+  &.text-lowercase {
+    text-transform: lowercase;
+  }
+}
