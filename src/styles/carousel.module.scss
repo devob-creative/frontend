@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  .item {
+    position: relative;
+    background-color: var(--bg-secondary);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .content {
+      position: absolute;
+      z-index: 1;
+      left: 30px;
+      top: 50%;
+      max-width: 560px;
+      transform: translateY(-50%);
+      h1 {
+        font-size: 90px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .navigation {
+    position: absolute;
+    z-index: 2;
+    margin: 0 -5px;
+    top: 50%;
+    right: 180px;
+    transform: translateY(-50%);
+    button {
+      width: 47px;
+      height: 47px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 30px;
+      margin: 0 5px;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
