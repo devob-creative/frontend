@@ -3,8 +3,9 @@ import cn from "classnames";
 import styles from "../../styles/text.module.scss";
 import {
   fontTypes,
-  textTransformTypes,
+  transformTypes,
   weightTypes,
+  sizeTypes,
 } from "../../types/text.type";
 
 export default function Text({
@@ -13,6 +14,7 @@ export default function Text({
   font,
   transform,
   weight,
+  size,
   variant,
   className,
   children,
@@ -25,8 +27,9 @@ export default function Text({
         styles.element,
         font && styles[fontTypes[font]],
         weight && styles[weightTypes[weight]],
+        size && styles[sizeTypes[size]],
         variant && `text-${variant}`,
-        transform && styles[textTransformTypes[transform]],
+        transform && styles[transformTypes[transform]],
         className && className
       )}
       {...props}

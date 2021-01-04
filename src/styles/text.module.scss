@@ -1,10 +1,12 @@
 .element {
+  /* fonts */
   &.font-primary {
     font-family: var(--font-primary);
   }
   &.font-secondary {
     font-family: var(--font-secondary);
   }
+  /* transforms */
   &.text-uppercase {
     text-transform: uppercase;
   }
@@ -14,7 +16,7 @@
   &.text-lowercase {
     text-transform: lowercase;
   }
-
+  /* weights */
   &.text-lighter {
     font-weight: 200;
   }
@@ -32,5 +34,24 @@
   }
   &.text-bolder {
     font-weight: 800;
+  }
+  /* sizes */
+  &.text-size-small {
+    font-size: 0.8em;
+  }
+  &.text-size-medium {
+    font-size: 0.9em;
+  }
+  &.text-size-normal {
+    font-size: 1em;
+  }
+  &.text-size-tall {
+    font-size: 1.1em;
+  }
+  &.text-size-large {
+    font-size: 1.3em;
+  }
+  &.text-size-big {
+    font-size: 1.9em;
   }
 }

@@ -9,5 +9,8 @@ export { default as Navbar } from "./navbar/navbar";
 export { default as Footer } from "./footer/footer";
 export { default as Brand } from "./brand/brand";
 export { default as Text } from "./text/text";
+export { default as Image } from "./image/image";
+export { default as Paragraph } from "./paragraph/paragraph";
 export { default as Carousel } from "./carousel/index";
 export { default as Service } from "./service/index";
+export { default as Portfolio } from "./portfolio/index";

@@ -3,7 +3,7 @@ export const fontTypes = {
   secondary: "font-secondary",
 };
 
-export const textTransformTypes = {
+export const transformTypes = {
   uppercase: "text-uppercase",
   capitalize: "text-capitalize",
   lowercase: "text-lowercase",
@@ -16,4 +16,13 @@ export const weightTypes = {
   semibold: "text-semibold",
   bold: "text-bold",
   bolder: "text-bolder",
+};
+
+export const sizeTypes = {
+  small: "text-size-small",
+  medium: "text-size-medium",
+  normal: "text-size-normal",
+  tall: "text-size-tall",
+  large: "text-size-large",
+  big: "text-size-big",
 };
