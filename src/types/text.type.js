@@ -8,3 +8,12 @@ export const textTransformTypes = {
   capitalize: "text-capitalize",
   lowercase: "text-lowercase",
 };
+
+export const weightTypes = {
+  lighter: "text-lighter",
+  light: "text-light",
+  normal: "text-normal",
+  semibold: "text-semibold",
+  bold: "text-bold",
+  bolder: "text-bolder",
+};

@@ -5,7 +5,7 @@ function Home() {
   return (
     <Layout>
       <CarouselContainer />
-      <Services />
+      <Services className="mb-5"/>
     </Layout>
   );
 }

@@ -14,4 +14,23 @@
   &.text-lowercase {
     text-transform: lowercase;
   }
+
+  &.text-lighter {
+    font-weight: 200;
+  }
+  &.text-light {
+    font-weight: 300;
+  }
+  &.text-normal {
+    font-weight: 400;
+  }
+  &.text-semibold {
+    font-weight: 500;
+  }
+  &.text-bold {
+    font-weight: 700;
+  }
+  &.text-bolder {
+    font-weight: 800;
+  }
 }

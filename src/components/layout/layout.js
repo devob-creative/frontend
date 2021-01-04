@@ -1,15 +1,15 @@
-import { Fragment } from "react";
-import { Navbar, Lent } from "../index";
+import { Navbar, Footer, Lent } from "../index";
 
 function Layout({ children, ...props }) {
   return (
-    <Fragment>
-      <Navbar />
-      <section className="page-wrapper" {...props}>
-        <div className="page-content">{children}</div>
-        <Lent />
-      </section>
-    </Fragment>
+    <section className="page-wrapper" {...props}>
+      <div className="page-content">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+      <Lent />
+    </section>
   );
 }
 

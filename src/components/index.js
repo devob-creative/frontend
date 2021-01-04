@@ -6,6 +6,7 @@ export { default as Lent } from "./lent/lent";
 export { default as Icon } from "./icon/icon";
 export { default as Button } from "./button/button";
 export { default as Navbar } from "./navbar/navbar";
+export { default as Footer } from "./footer/footer";
 export { default as Brand } from "./brand/brand";
 export { default as Text } from "./text/text";
 export { default as Carousel } from "./carousel/index";
