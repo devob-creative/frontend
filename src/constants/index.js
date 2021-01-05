@@ -1,3 +1,7 @@
+export { default as SOCIAL } from "./social";
+export { default as CONTACT } from "./contact";
+export { default as REGEX } from "./regex";
+
 export const NAV_LIST = [
   {
     title: "Home",

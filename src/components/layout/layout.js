@@ -1,4 +1,5 @@
 import { Navbar, Footer, Lent } from "../index";
+import { ExtraContainer } from "../../containers";
 
 function Layout({ children, ...props }) {
   return (
@@ -8,6 +9,7 @@ function Layout({ children, ...props }) {
         {children}
         <Footer />
       </div>
+      <ExtraContainer />
       <Lent />
     </section>
   );
