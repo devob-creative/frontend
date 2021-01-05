@@ -1,0 +1,13 @@
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    i {
+      color: var(--primary);
+    }
+  }
+  span {
+    margin-left: 15px;
+  }
+}
