@@ -10,4 +10,11 @@
       font-size: 4em;
     }
   }
+  &.wide {
+    padding-top: 135px;
+    padding-bottom: 65px;
+    .content {
+      height: auto;
+    }
+  }
 }

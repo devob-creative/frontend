@@ -1,5 +1,6 @@
 export { default as SOCIAL } from "./social";
 export { default as CONTACT } from "./contact";
+export { default as TECHNOLOGIES } from "./technologies";
 export { default as REGEX } from "./regex";
 
 export const NAV_LIST = [
