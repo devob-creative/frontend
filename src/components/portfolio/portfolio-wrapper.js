@@ -1,5 +1,4 @@
 import Masonry from "react-masonry-css";
-import { Container } from "../index";
 
 export default function PortfolioWrapper({ children, ...props }) {
   const breakpointColumnsObj = {
@@ -9,15 +8,13 @@ export default function PortfolioWrapper({ children, ...props }) {
   };
   return (
     <div {...props}>
-      <Container>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          {children}
-        </Masonry>
-      </Container>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {children}
+      </Masonry>
     </div>
   );
 }

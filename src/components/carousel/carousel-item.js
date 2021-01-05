@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import cn from "classnames";
-import { Button } from "../index";
+import { AnimatedButton } from "../index";
 import styles from "../../styles/carousel.module.scss";
 
 export default function CarouselItem({
@@ -22,7 +22,7 @@ export default function CarouselItem({
         <h1>{title}</h1>
         {actionTitle && (
           <a href={actionUrl}>
-            <Button title={actionTitle} />
+            <AnimatedButton title={actionTitle} />
           </a>
         )}
       </div>
