@@ -13,6 +13,7 @@ export { default as TextLoop } from "./text-loop/text-loop";
 export { default as Image } from "./image/image";
 export { default as Paragraph } from "./paragraph/paragraph";
 export { default as Modal } from "./modal/modal";
+export { default as Hero } from "./hero/hero";
 export { default as Carousel } from "./carousel/index";
 export { default as Service } from "./service/index";
 export { default as Portfolio } from "./portfolio/index";
