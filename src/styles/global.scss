@@ -4,10 +4,6 @@
 @import "/css/bootstrap-utilities.min.css";
 @import "/css/fontawesome.min.css";
 
-$primary: #ffcc00;
-$secondary: #000;
-$tertiary: #f4f7fc;
-
 :root {
   --primary: #ffcc00;
   --secondary: #000;
@@ -49,6 +45,11 @@ a {
   &:focus {
     outline-color: var(--secondary) !important;
   }
+}
+
+*::selection {
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .page-wrapper {

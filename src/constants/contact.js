@@ -1,6 +1,6 @@
 export default {
   phone: {
-    title: "Telefon",
+    title: "Phone",
     value: "+9940514731423",
     icon: "phone",
   },

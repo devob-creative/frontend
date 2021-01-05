@@ -17,6 +17,7 @@ export { default as Modal } from "./modal/modal";
 export { default as Hero } from "./hero/hero";
 export { default as Mixer } from "./mixer/mixer";
 export { default as TechnologyWidget } from "./technology-widget/technology-widget";
+export { default as Input } from "./input/index";
 export { default as Carousel } from "./carousel/index";
 export { default as Service } from "./service/index";
 export { default as Portfolio } from "./portfolio/index";
