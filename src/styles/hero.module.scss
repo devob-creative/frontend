@@ -1,0 +1,13 @@
+.wrapper {
+  position: relative;
+  padding-top: 75px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    .title {
+      font-size: 4em;
+    }
+  }
+}
