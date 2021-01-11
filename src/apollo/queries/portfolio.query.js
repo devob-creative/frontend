@@ -7,6 +7,7 @@ export const GET_PORTFOLIOS = gql`
       title
       description
       keywords
+      slug
       content
       image {
         url
