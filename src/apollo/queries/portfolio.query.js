@@ -9,12 +9,16 @@ export const GET_PORTFOLIOS = gql`
       keywords
       content
       image {
-        formats
+        url
+      }
+      cover {
+        url
       }
       colors {
         background
         text
       }
+      created_at
     }
   }
 `;
