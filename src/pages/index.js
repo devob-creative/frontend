@@ -1,25 +1,26 @@
 import { Layout, Head, Portfolio, Paragraph, Container } from "../components";
 import { Services, CarouselContainer } from "../containers";
-import { useServices } from "../apollo/actions/service.actions";
+import { usePortfolios } from "../apollo/actions/portfolio.action";
 
 function Home() {
-  const { data: { services } = {}, loading } = useServices();
+  const { data: { portfolios } = {}, loading } = usePortfolios();
+  console.log(portfolios);
   return (
     <Layout>
       <Head />
-      {services?.map((i) => (
-        <h1 key={i.id}>{i.title}</h1>
-      ))}
       <CarouselContainer />
       <Services className="mb-5" />
       <Paragraph title="Portfolio" className="mb-5" />
       <Container>
         <Portfolio.Wrapper className="mb-5">
-          <Portfolio.Item
-            title="Website for Minion"
-            date="28 April 2017"
-            image="http://devob.az/img/portfolio/8924525719289a3343a689fb0cf28f93.png"
-          />
+          {portfolios?.map((item) => (
+            <Portfolio.Item
+              key={item.id}
+              title={item.title}
+              date={item.created_at}
+              image={item.cover?.url || item.image[0].url}
+            />
+          ))}
         </Portfolio.Wrapper>
       </Container>
     </Layout>
