@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import cn from "classnames";
 import { AnimatedButton } from "../index";
+import { API_URI } from "../../constants";
 import styles from "../../styles/carousel.module.scss";
 
 export default function CarouselItem({
@@ -15,7 +16,7 @@ export default function CarouselItem({
   return (
     <div
       className={cn(styles.item, className && className)}
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${API_URI+image})` }}
       {...props}
     >
       <div className={styles.content}>
