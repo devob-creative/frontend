@@ -1,6 +1,5 @@
 import withApollo from "next-with-apollo";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-import { getDataFromTree } from "@apollo/client/react/ssr";
 import { API_URI } from "../constants";
 
 export default withApollo(
@@ -12,7 +11,6 @@ export default withApollo(
       cache: new InMemoryCache().restore(initialState || {}),
     });
   },
-  { getDataFromTree },
   {
     render: ({ Page, props }) => {
       return (
