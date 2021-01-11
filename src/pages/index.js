@@ -1,9 +1,10 @@
-import { Layout, Portfolio, Paragraph, Container } from "../components";
+import { Layout, Head, Portfolio, Paragraph, Container } from "../components";
 import { Services, CarouselContainer } from "../containers";
 
 function Home() {
   return (
     <Layout>
+      <Head />
       <CarouselContainer />
       <Services className="mb-5" />
       <Paragraph title="Portfolio" className="mb-5" />

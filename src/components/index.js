@@ -2,6 +2,7 @@ export { default as Container } from "./bootstrap/container";
 export { default as Row } from "./bootstrap/row";
 export { default as Col } from "./bootstrap/col";
 export { default as Layout } from "./layout/layout";
+export { default as Head } from "./head/head";
 export { default as Lent } from "./lent/lent";
 export { default as Icon } from "./icon/icon";
 export { default as AnimatedButton } from "./animated-button/animated-button";

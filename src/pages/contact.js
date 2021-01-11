@@ -2,6 +2,7 @@ import React from "react";
 import {
   Hero,
   Layout,
+  Head,
   Container,
   Row,
   Col,
@@ -15,6 +16,7 @@ import { CONTACT } from "../constants";
 function Contact() {
   return (
     <Layout>
+      <Head title="Contact" />
       <Hero title="Contact" />
       <Container className="mb-5">
         <Row>
@@ -73,7 +75,7 @@ function Contact() {
           </Col>
         </Row>
       </Container>
-      <style global>{`footer{display:none}`}</style>
+      <style global="true">{`footer{display:none}`}</style>
     </Layout>
   );
 }

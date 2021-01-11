@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Layout,
+  Head,
   Portfolio,
   Hero,
   Mixer,
@@ -40,6 +41,7 @@ function Portfolios() {
   ];
   return (
     <Layout>
+      <Head title="Portfolio" />
       <Hero title="Portfolio" />
       <Container>
         {buttons.map((button, index) => (

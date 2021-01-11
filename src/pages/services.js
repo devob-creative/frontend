@@ -1,5 +1,6 @@
 import {
   Layout,
+  Head,
   Hero,
   Text,
   Paragraph,
@@ -14,6 +15,7 @@ import { TECHNOLOGIES } from "../constants";
 function Services() {
   return (
     <Layout>
+      <Head title="What We Do"/>
       <Hero wide>
         <div className="w-50 mx-auto text-center">
           <Text as="h1" weight="bold">
