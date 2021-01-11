@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import cn from "classnames";
+import moment from "moment";
 import { Image, Text } from "../index";
 import styles from "../../styles/portfolio.module.scss";
 
@@ -18,7 +19,7 @@ export default function PortfolioItem({
       </div>
       <div className={styles.overlay}>
         <div className={styles.text}>
-          <Text size="tall">{date}</Text>
+          <Text size="tall">{moment(date).format("LL")}</Text>
           <Text as="h3" weight="bold" className="mt-4 mb-0">
             {title}
           </Text>
