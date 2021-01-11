@@ -1,10 +1,15 @@
 import { Layout, Head, Portfolio, Paragraph, Container } from "../components";
 import { Services, CarouselContainer } from "../containers";
+import { useServices } from "../apollo/actions/service.actions";
 
 function Home() {
+  const { data: { services } = {}, loading } = useServices();
   return (
     <Layout>
       <Head />
+      {services?.map((i) => (
+        <h1 key={i.id}>{i.title}</h1>
+      ))}
       <CarouselContainer />
       <Services className="mb-5" />
       <Paragraph title="Portfolio" className="mb-5" />

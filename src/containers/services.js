@@ -8,6 +8,7 @@ export default function Services({ ...props }) {
     <Container {...props}>
       <Service.Wrapper>
         <Row className="mx-0">
+          {loading && "Loading..."}
           {services?.map((item) => (
             <Col key={item.id} sm={4} className="px-0">
               <Service.Item icon={item.icon}>
