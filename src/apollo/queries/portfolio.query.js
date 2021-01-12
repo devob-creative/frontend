@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const GET_PORTFOLIOS = gql`
   query {
-    portfolios {
+    portfolios(sort: "created_at:desc") {
       id
       title
       description
