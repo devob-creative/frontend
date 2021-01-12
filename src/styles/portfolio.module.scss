@@ -1,6 +1,7 @@
 .item {
   position: relative;
   overflow: hidden;
+  animation: fadeIn 0.5s alternate;
   .image {
     max-height: 700px;
     height: 100%;
@@ -52,5 +53,14 @@
       opacity: 1;
       transform: translateY(0px);
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
