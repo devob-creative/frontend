@@ -22,3 +22,4 @@ export { default as Input } from "./input/index";
 export { default as Carousel } from "./carousel/index";
 export { default as Service } from "./service/index";
 export { default as Portfolio } from "./portfolio/index";
+export { default as Skeleton } from "./skeleton/index";

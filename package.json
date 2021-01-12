@@ -16,6 +16,7 @@
     "next-with-apollo": "^5.1.0",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
+    "react-content-loader": "^5.1.4",
     "react-dom": "17.0.1",
     "react-markdown": "^5.0.3",
     "react-masonry-css": "^1.0.14",
