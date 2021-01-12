@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const GET_PORTFOLIOS = gql`
-  query {
-    portfolios(sort: "created_at:desc") {
+  query($where: JSON) {
+    portfolios(sort: "created_at:desc", where: $where) {
       id
       title
       description
@@ -14,6 +14,10 @@ export const GET_PORTFOLIOS = gql`
       }
       cover {
         url
+      }
+      categories {
+        name
+        slug
       }
       colors {
         background
