@@ -3,21 +3,10 @@
 @import "/css/bootstrap-grid.min.css";
 @import "/css/bootstrap-utilities.min.css";
 @import "/css/fontawesome.min.css";
+@import "./variables.scss";
 
 :root {
-  --primary: #ffcc00;
-  --secondary: #000;
-  --tertiary: #f4f7fc;
-  --text-primary: #000;
-  --text-secondary: #fff;
-  --bg-primary: #000;
-  --bg-secondary: #fff;
-}
-
-:root {
-  --font-primary: "Montserrat", sans-serif;
-  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: unset !important;
 }
 
 body {
