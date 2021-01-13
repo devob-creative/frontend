@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 export default function PortfolioWrapper({ children, ...props }) {
   const breakpointColumnsObj = {
     default: 3,
-    700: 2,
+    992: 2,
     500: 1,
   };
   return (

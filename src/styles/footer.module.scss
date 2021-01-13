@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .wrapper {
   position: relative;
   background-color: var(--bg-secondary);
@@ -7,6 +9,13 @@
     transition: 0.2s;
     &:hover {
       color: var(--primary);
+    }
+  }
+  @include mobile() {
+    & {
+      .brand {
+        font-size: 0.7rem;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .wrapper {
   position: relative;
   padding-top: 75px;
@@ -22,6 +24,13 @@
     padding-bottom: 65px;
     .content {
       height: auto;
+    }
+  }
+  @include mobile() {
+    &,
+    &.wide {
+      padding-top: 30px;
+      padding-bottom: 50px;
     }
   }
 }

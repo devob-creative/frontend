@@ -6,7 +6,7 @@ function Home() {
     <Layout>
       <Head />
       <CarouselContainer />
-      <Services className="mb-5" />
+      <Services className="mb-5 mt-4 mt-sm-0" />
       <Paragraph title="Portfolio" className="mb-5" />
       <Container>
         <PortfolioContainer />

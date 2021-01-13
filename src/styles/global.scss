@@ -4,6 +4,7 @@
 @import "/css/bootstrap-utilities.min.css";
 @import "/css/fontawesome.min.css";
 @import "./variables.scss";
+@import "./mixins.scss";
 
 :root {
   scroll-behavior: unset !important;
@@ -65,4 +66,13 @@ a {
 }
 .my-masonry-grid_column > a {
   display: inline-block;
+}
+
+@include mobile() {
+  body {
+    padding-top: 56px;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
 }
