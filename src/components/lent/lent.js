@@ -2,14 +2,20 @@ import LentButton from "./lent-button";
 import LentNav from "./lent-nav";
 import LentNavItem from "./lent-nav-item";
 import Icon from "../icon/icon";
+import { useModals } from "../../apollo/actions/modal.action";
+import { modalsVar } from "../../apollo/cache/modal.cache";
 import { SOCIAL } from "../../constants";
 import styles from "../../styles/lent.module.scss";
 
 export default function Lent(props) {
+  const { data: { modals } = {} } = useModals();
   return (
     <div className={styles.wrapper} {...props}>
-      <LentButton>
-        <Icon type="solid" name="bars" />
+      <LentButton
+        isActive={modals?.extra}
+        onClick={() => modalsVar({ extra: !modalsVar()?.extra })}
+      >
+        <Icon type="solid" name={modals?.extra ? "times" : "bars"} />
       </LentButton>
       <LentNav>
         {SOCIAL.map((item, index) => (

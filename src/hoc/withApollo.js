@@ -1,5 +1,11 @@
 import withApollo from "next-with-apollo";
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import {
+  ApolloClient,
+  ApolloProvider,
+  InMemoryCache,
+  gql,
+} from "@apollo/client";
+import { modalsVar } from "../apollo/cache/modal.cache";
 import { API_URI } from "../constants";
 
 export default withApollo(
@@ -10,7 +16,24 @@ export default withApollo(
       credentials: "same-origin",
       ssrMode: !isBrowser,
       uri: `${API_URI}/graphql`,
-      cache: new InMemoryCache().restore(initialState || {}),
+      cache: new InMemoryCache({
+        typePolicies: {
+          Query: {
+            fields: {
+              modals: {
+                read() {
+                  return modalsVar();
+                },
+              },
+            },
+          },
+        },
+      }).restore(initialState || {}),
+      typeDefs: gql`
+        extend type Query {
+          modals: Json
+        }
+      `,
     });
   },
   {

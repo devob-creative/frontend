@@ -21,8 +21,12 @@
     font-size: 20px;
     font-weight: 500;
     transition: color 0.2s, background-color 0.2s;
-    &:hover {
+    &:hover,
+    &.active {
       background-color: var(--primary);
+    }
+    &.active {
+      font-size: 24px;
     }
   }
   .nav {
