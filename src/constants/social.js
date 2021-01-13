@@ -1,14 +1,14 @@
 export default [
   {
     title: "behance",
-    url: "#",
+    url: "https://www.behance.net/devobagency",
   },
   {
     title: "facebook",
-    url: "#",
+    url: "https://www.facebook.com/devobagency",
   },
   {
     title: "github",
-    url: "#",
+    url: "https://github.com/devob-creative",
   },
 ];
