@@ -1,0 +1,11 @@
+.carousel {
+  position: relative;
+  height: 100vh;
+  background-color: #fefefe;
+  .content {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
