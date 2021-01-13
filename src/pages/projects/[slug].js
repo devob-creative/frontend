@@ -23,11 +23,9 @@ export default function Project({ referer }) {
           <Text as="h1" weight="bold">
             {portfolioBySlug?.title}
           </Text>
-          <Text as="div" font="secondary" size="tall" className="mt-4 px-3">
-            {portfolioBySlug?.content && (
-              <ReactMarkdown>{portfolioBySlug?.content}</ReactMarkdown>
-            )}
-          </Text>
+          {portfolioBySlug?.content && (
+            <ReactMarkdown>{portfolioBySlug?.content}</ReactMarkdown>
+          )}
         </div>
       </Hero>
       <Presentation images={portfolioBySlug?.image} />
