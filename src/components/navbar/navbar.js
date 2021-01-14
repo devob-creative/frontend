@@ -13,7 +13,7 @@ export default function Navbar({ className, ...props }) {
       <Container>
         <div className={styles.content}>
           <Link href="/">
-            <a>
+            <a aria-label="Home">
               <Brand />
             </a>
           </Link>

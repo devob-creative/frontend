@@ -14,6 +14,7 @@ export default function Lent(props) {
       <LentButton
         isActive={modals?.extra}
         onClick={() => modalsVar({ extra: !modalsVar()?.extra })}
+        aria-label="Menu"
       >
         <Icon type="solid" name={modals?.extra ? "times" : "bars"} />
       </LentButton>
@@ -22,7 +23,7 @@ export default function Lent(props) {
           <LentNavItem key={index} title={item.title} url={item.url} />
         ))}
       </LentNav>
-      <LentButton>
+      <LentButton aria-label="Language">
         <span>EN</span>
       </LentButton>
     </div>
