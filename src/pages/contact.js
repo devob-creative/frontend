@@ -15,7 +15,7 @@ import { useNewMessage } from "../apollo/actions/contact.action";
 import { CONTACT, REGEX } from "../constants";
 
 function Contact() {
-  const [newMessage, { loading, data }] = useNewMessage();
+  const [newMessage, { loading }] = useNewMessage();
   const initialState = {
     fullname: "",
     company: "",
@@ -150,7 +150,12 @@ function Contact() {
                   </Input.Group>
                 </Col>
               </Row>
-              <Button type="submit" title="Send Message" variant="secondary" />
+              <Button
+                type="submit"
+                title="Send Message"
+                variant="secondary"
+                loading={loading}
+              />
             </Col>
           </Row>
         </form>
