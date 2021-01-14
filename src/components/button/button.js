@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import cn from "classnames";
+import { Loading } from "../index";
 import styles from "../../styles/button.module.scss";
 
 export default function Button({
@@ -7,6 +8,7 @@ export default function Button({
   variant,
   size,
   uppercase,
+  loading,
   className,
   ...props
 }) {
@@ -21,6 +23,11 @@ export default function Button({
       )}
       {...props}
     >
+      {loading && (
+        <div className={styles.loading}>
+          <Loading size="sm" />
+        </div>
+      )}
       {title || children}
     </button>
   );
@@ -30,6 +37,7 @@ Button.propTypes = {
   title: PropTypes.string,
   variant: PropTypes.string,
   uppercase: PropTypes.bool,
+  loading: PropTypes.bool,
   className: PropTypes.string,
 };
 
@@ -37,4 +45,5 @@ Button.defaultProps = {
   variant: "primary",
   size: "medium",
   uppercase: true,
+  loading: false,
 };
