@@ -11,17 +11,16 @@ export default function CarouselContainer({ ...props }) {
         <Skeleton.CarouselSkeleton />
       ) : (
         <Carousel.Wrapper {...props}>
-          <SwiperSlide>
-            {slides?.map((item) => (
+          {slides?.map((item) => (
+            <SwiperSlide key={item.id}>
               <Carousel.Item
-                key={item.id}
                 title={item.title}
                 image={item.image.url}
                 actionTitle={item.action}
                 actionUrl={item.redirect}
               />
-            ))}
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Carousel.Wrapper>
       )}
     </Fragment>
