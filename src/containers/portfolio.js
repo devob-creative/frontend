@@ -26,7 +26,7 @@ export default function PortfolioContainer({ filter }) {
               <Portfolio.Item
                 title={item.title}
                 date={item.date}
-                image={item.image[0].url}
+                image={item.cover.url || item.image[0].url}
               />
             </a>
           </Link>
