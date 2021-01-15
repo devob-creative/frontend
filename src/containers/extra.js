@@ -7,13 +7,13 @@ export default function ExtraContainer({ ...props }) {
     <Modal isOpen={modals?.extra} fullscreen={true} {...props}>
       <div className="d-flex align-items-center justify-content-center flex-column h-100">
         <div className="d-flex align-center mb-4">
-          <Text as="h1" weight="bold" text="Mən" className="mx-2" />
+          {/* <Text as="h1" weight="bold" text="I'm a" className="mx-2" />
           <TextLoop
-            texts={["Developerəm", "Qrafik Dizaynerəm"]}
+            texts={["Developer", "Graphic Designer"]}
             as="h1"
             weight="bolder"
-            style={{ width: "300px" }}
-          />
+          /> */}
+          <Text as="h1" text="Look again later" weight="bold" />
         </div>
       </div>
     </Modal>
