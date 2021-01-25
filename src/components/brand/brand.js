@@ -3,7 +3,7 @@ export default function Brand({ ...props }) {
     <svg width="36px" height="36px" viewBox="0 0 20.03 20.03" {...props}>
       <style
         type="text/css"
-        dangerouslySetInnerHTML={{ __html: "\n\t.st0{fill:#EFA207;}\n" }}
+        dangerouslySetInnerHTML={{ __html: "\n\t.st0{fill:#ffcc00;}\n" }}
       />
       <path
         d="M19.94,10.01c0,4.2-3.41,7.61-7.61,7.61h-6.9c-0.6,0-1.09-0.49-1.09-1.09v0c0-0.6,0.49-1.09,1.09-1.09h0.92
