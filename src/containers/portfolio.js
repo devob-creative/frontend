@@ -22,7 +22,7 @@ export default function PortfolioContainer({ filter }) {
       <Portfolio.Wrapper className="mb-5 mt-4">
         {portfolios?.map((item) => (
           <Link key={item.id} href={`/projects/${item.slug}`}>
-            <a>
+            <a className="d-block">
               <Portfolio.Item
                 title={item.title}
                 date={item.date}
